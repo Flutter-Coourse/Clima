@@ -1,4 +1,4 @@
-# weather
+# Weather
 
 Weather App
 
