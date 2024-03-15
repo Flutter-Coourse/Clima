@@ -2,6 +2,8 @@
 
 Weather App
 
+*Configurar la latitud y longitud dependiendo lo que se necesite.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
