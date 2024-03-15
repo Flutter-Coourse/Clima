@@ -1,18 +1,12 @@
-import 'package:geolocator/geolocator.dart';
-
 class Location {
   double? latitude;
   double? longitude;
 
-  Future<void> getCurrentLocation() async {
-    try {
-      Position position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.low);
+  Location({this.latitude, this.longitude});
 
-      latitude = position.latitude;
-      longitude = position.longitude;
-    } catch (e) {
-      print(e);
-    }
+  void getCurrentLocation() {
+    //Localización de ejemplo de San Francisco
+    latitude = 37.7749;
+    longitude = -122.4194;
   }
 }

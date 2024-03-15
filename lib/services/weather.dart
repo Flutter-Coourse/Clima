@@ -14,8 +14,11 @@ class WeatherModel {
   }
 
   Future<dynamic> getLocationWeather() async {
-    Location location = Location();
-    await location.getCurrentLocation();
+    Location location = Location(
+      latitude: 37.7749,
+      longitude: -122.4194,
+    );
+    location.getCurrentLocation();
 
     NetworkHelper networkHelper = NetworkHelper(
         '$openWeatherMapURL?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
